@@ -67,3 +67,4 @@ To interact with the model in your application, you'll need to download one of O
 - **Real-time Communication**: Socket.IO
 - **External APIs**: Google Gemini API, Ollama API (for intelligent responses)
 - **File Handling**: Upload and download files directly in the chat
+- **Web Scokets**: For effective Real-time Communication
