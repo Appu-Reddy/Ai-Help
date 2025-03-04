@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const fileinp = document.getElementById('file-input');
     const openbutton = document.querySelector('#open-chatbot');
 
-    let attachedfile = null;
 
     openbutton.style.display = "none";
 
@@ -106,12 +105,14 @@ document.addEventListener('DOMContentLoaded', () => {
     closebtn.addEventListener('click', () => {
         chatbody.style.display = 'none';
         closebtn.style.display = 'none';
+        mssginp.disabled = true;
         openbutton.style.display = 'flex';
     });
 
     openbutton.addEventListener('click', () => {
         chatbody.style.display = 'flex';
         closebtn.style.display = 'flex';
+        mssginp.disabled = false;
         openbutton.style.display = 'none';
     });
 
